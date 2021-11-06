@@ -185,7 +185,7 @@
         "SONG_DESC": "Uploads the song you wrote.",
         "NEED_TEXT_SONG": "*Please write a song!*\n*Example:* ```.song Stay with Justin Bieber ```",
         "NO_RESULT": "```I couldn't find anything 🥲```",
-        "DOWNLOADING_SONG": "*🌝 Downloading your song...*",
+        "DOWNLOADING_SONG": "*≪ ── ≪• :DOWNLODING: •≫ ──≫*",
         "UPLOADING_SONG": "*🌚 Uploading your song...*",
         "VIDEO_DESC": "Downloads video from YouTube.",
         "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video https://youtu.be/R8r5tDZhT6k```",
