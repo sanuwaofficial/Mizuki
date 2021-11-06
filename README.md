@@ -49,10 +49,12 @@
   </a>
 </p>
 
-### පහළ තිබෙන "Queen Mizuki Website" නම් බටනය click කර අපගේ වෙබ් පිටුවට පිවිසීමෙන් ඔබට පහසුවෙන් Mizuki deploy කරගත හැක.
+### ඔබට පහසුවෙන් QR කේතය Repl.it මඟින් ලබා ගත හැක.. පහල බටනය CLICK කරන්න
 
-[![Website](https://telegra.ph/file/3aa63bc94120c24b16f5c.jpg)](https://mizuki.cf)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@Thejaka/Mizuki#index.js)
 
+## QR කේතය ලබා ගත් පසු Bot deploy කිරීමට පහල බටනය CLICK කරන්න..
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/sanuwaofficial/Mizukitest)
 
 ---------------------------------   
 
