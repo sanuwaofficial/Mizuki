@@ -186,12 +186,12 @@
 			"description": "ඒක අතෑරපන් මේක අපි දෙනව",
 			"required": false,
 			"value": "true"
-		 }"
+		 },
 		"SONGD": {
                         "description": "සිංදුව වෙනකොට එන මැසේජ් එක",
                         "required": false,
                         "value": "*Downloading Your Song*"
-        },
+                  },
                 "SONGU": {
                        "description": "සිංදුව වෙනකොට එන මැසේජ් එක",
                        "required": false,
