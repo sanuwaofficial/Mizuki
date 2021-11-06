@@ -188,12 +188,12 @@
 			"value": "true"
 		 },
 		"SONGD": {
-                        "description": "සිංදුව වෙනකොට එන මැසේජ් එක",
+                        "description": "සිංදුව download වෙනකොට එන මැසේජ් එක",
                         "required": false,
                         "value": "*Downloading Your Song*"
                   },
                 "SONGU": {
-                       "description": "සිංදුව වෙනකොට එන මැසේජ් එක",
+                       "description": "සිංදුව upload වෙනකොට එන මැසේජ් එක",
                        "required": false,
                        "value": "*Uploading Your Song*"
 		}	
