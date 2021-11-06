@@ -13,7 +13,7 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './Mizuki.db' : process.
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: '👸 Mizuki 1.0 beta version',
+    VERSION: '👸 Mizuki VIP VERSION ',
     CHANNEL: 'https://chat.whatsapp.com/HbURDOKU6Up29kmFXZUMEo',
     SESSION: process.env.MIZUKI_SESSION === undefined ? '' : process.env.MIZUKI_SESSION,
     ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
