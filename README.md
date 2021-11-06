@@ -43,8 +43,8 @@
     <img src="https://img.shields.io/github/repo-size/phaticusthiccy/WhatsAsenaDuplicated?color=purple&label=Repo%20Boyutu&style=plastic">
 
   </a>
-  <a href="https://wa.me/94715343050">
-    <img src="https://img.shields.io/badge/Contact%20Me%20On%20Whatsapp-Mr%20joka%20-purple&style=plastic">
+  <a href="https://wa.me/94701629707">
+    <img src="https://img.shields.io/badge/Contact%20Me%20On%20Whatsapp-SANUWA OFFICIAL-purple&style=plastic">
 
   </a>
 </p>
