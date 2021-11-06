@@ -187,6 +187,15 @@
 			"required": false,
 			"value": "true"
 		 }
+		"SONGD": {
+            "description": "සිංදුව වෙනකොට එන මැසේජ් එක",
+            "required": false,
+            "value": "*Downloading Your Song*"
+        },
+        "SONGU": {
+            "description": "සිංදුව වෙනකොට එන මැසේජ් එක",
+            "required": false,
+            "value": "*Uploading Your Song*"
    	 },
    	 "addons": [{
    	   "plan": "heroku-postgresql"
