@@ -187,6 +187,11 @@
 			"required": false,
 			"value": "true"
 		 },
+		"CAP": {
+                        "description": "caption එකට දාන්න ඕන මැසේජ් එක ",
+                        "required": false,
+                        "value": "© ɪ ᴀᴍ Qᴜᴇᴇɴ ᴍɪᴢᴜᴋɪ"
+                  },
 		"SONGD": {
                         "description": "සිංදුව download වෙනකොට එන මැසේජ් එක",
                         "required": false,
