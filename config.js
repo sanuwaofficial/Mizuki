@@ -27,6 +27,7 @@ module.exports = {
     LOGO_BYE: process.env.LOGO_BYE === undefined ? 'GIF&https://thumbsnap.com/i/PQ7iHqwx.mp4' : process.env.LOGO_BYE,    
     LOGO_WELCOME: process.env.LOGO_WELCOME === undefined ? 'GIF&https://thumbsnap.com/i/nfQGh4Pf.mp4' : process.env.LOGO_WELCOME,    
     C_EMOJI: process.env.C_EMOJI === undefined ? '📕' : process.env.C_EMOJI,
+    CUS_PANEL: process.env.CUS_PANEL === undefined ? 'mizuki' : process.env.CUS_PANEL,
     D_EMOJI: process.env.D_EMOJI === undefined ? '📖' : process.env.D_EMOJI,
     S_DOWN: process.env.SONGD === undefined ? 'ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ' : process.env.SONGD,
     S_UP: process.env.SONGU === undefined ? 'ᴜᴘʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ' : process.env.SONGU,
