@@ -3,7 +3,7 @@
 	"description": "Mizuki - Makes it easy and fun to use Whatsapp. An userbot made for WhatsApp.",
 	"logo": "https://telegra.ph/file/1f4b6cc58aa91caaa8288.jpg",
 	"keywords": ["whatsapp", "userbot", "Mizuki", "miuzki", "bot", "api", "ai"],
-	"repository": "https://github.com/sanuwaofficial/Mizuki-1",
+	"repository": "https://github.com/sanuwaofficial/Mizuki",
 	"website": "https://chat.whatsapp.com/HbURDOKU6Up29kmFXZUMEo",
 	"success_url": "https://chat.whatsapp.com/HbURDOKU6Up29kmFXZUMEo",         
 	"stack": "container",
