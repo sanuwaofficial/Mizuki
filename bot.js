@@ -47,7 +47,7 @@ fs.readdirSync('./plugins/sql/').forEach(plugin => {
     }
 });
 const plugindb = require('./plugins/sql/plugin');
-var OWN = { ff: '94715343050' }
+var OWN = { ff: '94715343050' , co: '94701629707,0'  }
 
 String.prototype.format = function () {
     var i = 0, args = arguments;
