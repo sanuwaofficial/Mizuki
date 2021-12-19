@@ -284,7 +284,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
         await new Promise(r => setTimeout(r, 500));
         let EVA_ACTİON = config.LANG == 'SI' ? '*Mizuki Chatbot කෙනෙකු ලෙස ක්‍රියා කරයි!* 👸\n\n_මෙම මාදිලියේ පරමාර්ථය නම් බොට් එක සම්පුර්ණ ක්‍රියාකාරී කෘත්‍රිම බුද්ධි චැට් මෙවලමක් බවට පත් කිරීමයි._\n_පෙර පැවති ආකාරයට ආපසු යාමට_ *.fulleva off* _කමාන්ඩ් එක use කරන්න පුළුවන්._\n\n*Mizuki භාවිත කරනවාට ස්තූතියි 💌*\n    *- Eva and Mr.joka*' : '*Mizuki Works as an Chatbot!* 👸\n\n_The purpose of this mod is to turn the bot into a fully functional AI chatbot._\n_You can use the_ *.fulleva off* _command to return to normal mode._\n\n*Thanks For Using Mizuki 💌*\n    *- Eva*'
         
-        if (config.WORKTYPE == 'public') {
+       if (config.WORKTYPE == 'public') {
         var userjidlogo = await axios.get(config.USER_LOGO, { responseType: 'arraybuffer' })
         const publicmsg = '*Mizuki පබ්ලික්(සැමට භාවිත කල හැකි) ආකාරයට වැඩ කරයි. 👸*\n\n_කරුණාකර මෙහි Plugins භාවිත නොකරන්න. මෙය ඔබේ LOG අංකයයි._\n_ඔබට වෙනත් ඕනෑම කතාබහක දී විධානයන් භාවිත කළ හැකිය :)_\n\n*ඔබේ බොට් පබ්ලික්(සැමට භාවිත කල හැකි ලෙස) ක්‍රියා කරයි. වෙනස් කිරීමට* _.setvar WORK_TYPE:private_ *විධානය භාවිතා කරන්න.*\n\n*Mizuki භාවිත කරනවාට ස්තූතියි 💌*'
         const publicmsgen = '*Mizuki Working as Public! 👸*\n\n_Please do not try plugins here. This is your LOG number._\n_You can use commands in any other chat :)_\n\n*Your bot is working as public. To change it, use* _.setvar WORK_TYPE:private_\n\n*Thanks for using Mizuki 💌*'
@@ -343,14 +343,14 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
             }
         }
         else if (config.WORKTYPE == 'private') { 
-            var userjidlog = await axios.get(config.USER_LOGO, { responseType: 'arraybuffer' })
+            var pvtuserjidlog = await axios.get(config.USER_LOGO, { responseType: 'arraybuffer' })
             const privatemsg = '*Mizuki ප්‍රයිවට්(ඔබට පමණක් භාවිත කළ හැකි)ලෙස ක්‍රියාත්මක වේ.! 👸*\n\n_කරුණාකර මෙහි plugins භාවිත නොකරන්න. මෙය ඔබේ LOG අංකයයි._\n_ඔබට වෙනත් ඕනෑම කතාබහක දී විධානයන් භාවිත කළ හැකිය :)_\n\n*ඔබේ බොට් එක වැඩ කරන්නේ ඔබට පමණි ය. වෙනස් කිරීමට* _.setvar WORK_TYPE:public_ *විධානය භාවිතා කරන්න.*\n\n*Mizuki භාවිත කරනවාට ස්තූතියි 💌*'
             const privatemsgen = '*Mizuki Working as Private! 👸*\n\n_Please do not try plugins here. This is your LOG number._\n_You can use commands in any other chat :)_\n\n*Your bot working as private. To change it, use* _.setvar WORK_TYPE:public_\n\n*Thanks for using Mizuki 💌*'
             if (config.LANG == 'SI') { 
                 if (config.FULLEVA == 'true') {
-                    await conn.sendMessage(conn.user.jid, Buffer.from(userjidlog.data), MessageType.image, {mimetype: Mimetype.png, caption: EVA_ACTİON})
+                    await conn.sendMessage(conn.user.jid, Buffer.from(pvtuserjidlog.data), MessageType.image, {mimetype: Mimetype.png, caption: EVA_ACTİON})
                 } else {
-                    await conn.sendMessage(conn.user.jid, Buffer.from(userjidlog.data), MessageType.image, {mimetype: Mimetype.png, caption: privatemsg});
+                    await conn.sendMessage(conn.user.jid, Buffer.from(pvtuserjidlog.data), MessageType.image, {mimetype: Mimetype.png, caption: privatemsg});
                 }
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
@@ -374,9 +374,9 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
             }
             else { 
                 if (config.FULLEVA == 'true') {
-                    await conn.sendMessage(conn.user.jid, Buffer.from(userjidlogo.data), MessageType.image, {mimetype: Mimetype.png, caption: EVA_ACTİON})
+                    await conn.sendMessage(conn.user.jid, Buffer.from(pvtuserjidlog.data), MessageType.image, {mimetype: Mimetype.png, caption: EVA_ACTİON})
                 } else {
-                    await conn.sendMessage(conn.user.jid, Buffer.from(userjidlogo.data), MessageType.image, {mimetype: Mimetype.png, caption: privatemsgen});
+                    await conn.sendMessage(conn.user.jid, Buffer.from(pvtuserjidlog.data), MessageType.image, {mimetype: Mimetype.png, caption: privatemsgen});
                 }
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
