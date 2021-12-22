@@ -1,5 +1,5 @@
 {
-	"name": "queenmizuki",
+	"name": "sanuwa-mizuki",
 	"version": "1.0.0",
 	"description": "Mizuki project - a Whatsapp userbot helping to improve your Whatsapp experience.",
 	"main": "./Mizuki/bot.js",
@@ -8,7 +8,7 @@
 	},
 	"repository": {
 	  "type": "git",
-	  "url": "git+https://github.com/MrJoka-Thejaka/Mizuki.git"
+	  "url": "git+https://github.com/sanuwaofficial/Mizuki.git"
 	},
 	"keywords": [
 	  "whatsapp",
@@ -32,6 +32,7 @@
 	},
 	"homepage": "https://github.com/MrJoka-Thejaka/Mizuki#readme",
 	"dependencies": {
-	  "queen-mizuki": "^2.0.0"	
+	  "queen-mizuki": "^2.0.0",
+	  "sanuwa-npm:: "^1.0.0"
 	}                      
   }
