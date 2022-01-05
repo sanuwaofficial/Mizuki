@@ -7,7 +7,7 @@ let wk = Config.WORKTYPE == 'public' ? false : true
 const MDOWN = "*📥ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ᴍᴇᴅɪᴀғɪʀᴇ ғɪʟᴇ*"
 const MUP = "*📤ᴜᴘʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ᴍᴇᴅɪᴀғɪʀᴇ ғɪʟᴇ*"
 
-Mizuki.addCommand({pattern: 'mefire ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
+Mizuki.addCommand({pattern: 'mfire ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
  const mlink = match[1]
  if (!mlink) return await message.client.sendMessage(message.jid, '*Please Give a vaild MEDIAFIRE link*', MessageType.text, { quoted: message.data });
     var down = await message.client.sendMessage(message.jid, MDOWN, MessageType.text, { quoted: message.data });
