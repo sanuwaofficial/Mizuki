@@ -2,6 +2,8 @@
 
 const { Sequelize } = require('sequelize');
 const fs = require('fs');
+const Language = require('../language');
+const Lang = Language.getString('scrapers');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
 
 // Our Special func:
@@ -31,6 +33,8 @@ module.exports = {
     D_EMOJI: process.env.D_EMOJI === undefined ? '📖' : process.env.D_EMOJI,
     S_DOWN: process.env.SONGD === undefined ? 'ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ' : process.env.SONGD,
     S_UP: process.env.SONGU === undefined ? 'ᴜᴘʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ' : process.env.SONGU,
+    V_DOWN: process.env.SONGD === undefined ? 'ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ' : process.env.VIDEOD,
+    V_UP: process.env.SONGU === undefined ? 'ᴜᴘʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ' : process.env.VIDEOU,
     CAP:  process.env.CAP === undefined ? '© ɪ ᴀᴍ Qᴜᴇᴇɴ ᴍɪᴢᴜᴋɪ' : process.env.CAP,
     KICKMEMSG: process.env.KICKME_MESSAGE === undefined ? 'default' : process.env.KICKME_MESSAGE,
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
