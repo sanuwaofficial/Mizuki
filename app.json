@@ -203,18 +203,7 @@
                        "value": "*Uploading Your Song*"
 		}	
    	 },
-	 "VIDEOD": {
-                       "description": "වීඩියෝ downloadload වෙනකොට එන මැසේජ් එක",
-                       "required": false,
-                       "value": "*downloading Your video*"
-		}	
-   	 },
-	 "VIDEOU": {
-                       "description": "වීඩියෝ upload වෙනකොට එන මැසේජ් එක",
-                       "required": false,
-                       "value": "*Uploading Your video*"
-		}	
-   	 },
+	 
    	 "addons": [{
    	   "plan": "heroku-postgresql"
    	 }],
