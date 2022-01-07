@@ -603,7 +603,7 @@ else if (config.WORKTYPE == 'public') {
         
 
         await message.client.sendMessage(message.jid,mesaj,MessageType.text);
-        await reply.delete();
+        await message.client.deleteMessage(message.jid, {id: reply.key.id, remoteJid: message.jid, fromMe: true}) ;
     }));
 
     Mizuki.addCommand({pattern: 'wiki ?(.*)', fromMe: false, desc: Lang.WIKI_DESC}, (async (message, match) => { 
