@@ -2,8 +2,7 @@
 
 const { Sequelize } = require('sequelize');
 const fs = require('fs');
-const Language = require('../language');
-const Lang = Language.getString('scrapers');
+
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
 
 // Our Special func:
