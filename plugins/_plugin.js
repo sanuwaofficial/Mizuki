@@ -12,7 +12,7 @@ const {MessageType} = require('@adiwajshing/baileys');
 const got = require('got');
 const fs = require('fs');
 const Db = require('./sql/plugin');
-const listGist =  ["sanuwaofficial","MrJoka-Thejaka" ]; 
+const listGist =  ['sanuwaofficial','MrJoka-Thejaka', ]; 
 
 const Language = require('../language');
 const Lang = Language.getString('_plugin');
@@ -128,7 +128,7 @@ Mizuki.addCommand({pattern: 'plugin$', fromMe: true, desc: Lang.PLUGIN_DESC}, (a
     } else {
         plugins.map(
             (plugin) => {
-                let vf = plugin.dataValues.url.includes('MrJoka-Thejaka') ? msg : unmsg
+                let vf = plugin.dataValues.url.includes(listGist) ? msg : unmsg
                 mesaj += '```' + plugin.dataValues.name + '```: ' + plugin.dataValues.url + '\n' + vf + '\n\n';
             }
         );
