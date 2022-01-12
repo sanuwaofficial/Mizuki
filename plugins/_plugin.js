@@ -12,6 +12,7 @@ const {MessageType} = require('@adiwajshing/baileys');
 const got = require('got');
 const fs = require('fs');
 const Db = require('./sql/plugin');
+const listGist =  ["sanuwaofficial","MrJoka-Thejaka" ]; 
 
 const Language = require('../language');
 const Lang = Language.getString('_plugin');
@@ -99,11 +100,11 @@ Mizuki.addCommand({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DE
             fs.unlinkSync('/root/WhatsAsenaDuplicated/plugins/' + plugin_name + '.js')
         } 
         else {
-            if (!match[1].includes('MrJoka-Thejaka') && DEG.level > 99) {
+            if (!match[1].includes(listGist) && DEG.level > 99) {
                 await message.client.sendMessage(message.jid,LANG.limit + DEG.level + '_', MessageType.text)
                 fs.unlinkSync('/root/WhatsAsenaDuplicated/plugins/' + plugin_name + '.js')
             }
-            else if (!match[1].includes('MrJoka-Thejaka') && DEG.level < 100) {
+            else if (!match[1].includes(listGist) && DEG.level < 100) {
                 await Db.installPlugin(url, plugin_name)
                 await new Promise(r => setTimeout(r, 400))
                 await message.client.sendMessage(message.jid, Lang.UNOFF, MessageType.text)
