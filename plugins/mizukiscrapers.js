@@ -338,7 +338,7 @@ if (config.WORKTYPE == 'private') {
     Mizuki.addCommand({pattern: 'video ?(.*)', fromMe: true, desc: Lang.VIDEO_DESC}, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text, {quoted: message.data});
-        if (!match[1].includes('youtube')) return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text, {quoted: message.data});
+        if (!match[1].includes('youtu')) return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text, {quoted: message.data});
     var svid = match[1].replace("shorts/","watch?v=")
     var s2vid = svid.replace("?feature=share","")
         var VID = '';
@@ -560,10 +560,10 @@ else if (config.WORKTYPE == 'public') {
             });
     }));
 
-    Mizuki.addCommand({pattern: 'video ?(.*)', fromMe: false, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
+   Mizuki.addCommand({pattern: 'video ?(.*)', fromMe: false, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text, {quoted: message.data});
-        if (!match[1].includes('youtube')) return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text, {quoted: message.data});
+        if (!match[1].includes('youtu')) return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text, {quoted: message.data});
     var svid = match[1].replace("shorts/","watch?v=")
     var s2vid = svid.replace("?feature=share","")
         var VID = '';
