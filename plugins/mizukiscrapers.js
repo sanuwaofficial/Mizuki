@@ -344,7 +344,7 @@ if (config.WORKTYPE == 'private') {
         var VID = '';
         try {
             if (s2vid.includes('watch')) {
-                var tsts = match[1].replace('watch?v=', '')
+                var tsts = s2vid.replace('watch?v=', '')
                 var alal = tsts.split('/')[3]
                 VID = alal
             } else {     
@@ -562,17 +562,20 @@ else if (config.WORKTYPE == 'public') {
 
     Mizuki.addCommand({pattern: 'video ?(.*)', fromMe: false, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text, {quoted: message.data});    
-    
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text, {quoted: message.data});
+        if (!match[1].includes('youtube')) return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text, {quoted: message.data});
+    var svid = match[1].replace("shorts/","watch?v=")
+    var s2vid = svid.replace("?feature=share","")
         var VID = '';
         try {
-            if (match[1].includes('watch')) {
-                var tsts = match[1].replace('watch?v=', '')
+            if (s2vid.includes('watch')) {
+                var tsts = s2vid.replace('watch?v=', '')
                 var alal = tsts.split('/')[3]
                 VID = alal
             } else {     
                 VID = match[1].split('/')[3]
             }
+    
         } catch {
             return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
         }
