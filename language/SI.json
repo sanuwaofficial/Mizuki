@@ -188,7 +188,7 @@
       "DOWNLOADING_SONG": "*ඔබගේ වීඩියෝව ඩව්න්ලෝඩ් කරමින් පවතී..*",
       "UPLOADING_SONG": "*ඔබගේ ගීතය අප්ලෝඩ් කරමින් පවතී..*",
       "VIDEO_DESC": "YouTube වෙතින් වීඩියෝ බාගත කරයි.",
-      "NEED_VIDEO": "*කරුණාකර වීඩියෝවෙහි ලින්ක් එක සඳහන් කරන්න!*\n```Example:``` .video https://youtu.be/R8r5tDZhT6k",
+      "NEED_VIDEO": "*කරුණාකර Youtube වීඩියෝවෙහි ලින්ක් එක සඳහන් කරන්න!*\n```Example:``` .video https://youtu.be/R8r5tDZhT6k",
       "DOWNLOADING_VIDEO": "*ඔබගේ වීඩියෝව ඩව්න්ලෝඩ් කරමින් පවතී..*",
       "UPLOADING_VIDEO": "*ඔබගේ වීඩියෝව අප්ලෝඩ් කරමින් පවතී..*",
       "YT_DESC": "YouTube හි තිබෙන වීඩියෝවල ලින්ක් අප්ලෝඩ් කරයි.",
