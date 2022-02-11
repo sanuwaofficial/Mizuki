@@ -33,7 +33,7 @@
 	"homepage": "https://github.com/MrJoka-Thejaka/Mizuki#readme",
 	"dependencies": {
           
-	 "queen-mizuki": "^2.0.1",
+	 "queen-mizuki": "^2.0.0",
 	  "sanuwa-npm": "^1.1.9"
 	
 	}                      
