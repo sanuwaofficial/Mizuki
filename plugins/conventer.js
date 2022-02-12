@@ -13,7 +13,7 @@ const Config = require('../config');
 const cheerio = require('cheerio')
 const FormData = require('form-data')
 const Axios = require('axios');
-
+let BodyForm = require('form-data')
 const Language = require('../language');
 const Lang = Language.getString('conventer');
 
